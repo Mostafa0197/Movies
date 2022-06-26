@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Movies</title>
+  </head>
+  <body>
+    <nav id="sideNav">
+      <div class="d-flex h-100">
+        <div
+          id="navMenu"
+          class="bg-black text-white d-flex flex-column justify-content-between p-3"
+        >
+          <div class="nav flex-column overflow-hidden">
+            <a id="now_playing" class="nav-link" href="#">Now playing</a>
+            <a id="popular" class="nav-link" href="#">Popular</a>
+            <a id="top_rated" class="nav-link" href="#">Top Rated</a>
+            <a id="trending/movie/day" class="nav-link" href="#trending"
+              >Trending</a
+            >
+            <a id="upcoming" class="nav-link" href="#">Upcoming</a>
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </div>
+          <div class="icons">
+            <a href="#"> <i class="fa-brands fa-facebook-f mx-3"></i> </a>
+            <a href="#"> <i class="fa-brands fa-twitter p-1"></i> </a>
+            <a href="#"> <i class="fa-solid fa-globe fa-1x m-3"></i> </a>
+            <p class="text-muted">Copyright Â© 2019 All Rights Reserved.</p>
+          </div>
+        </div>
+        <div
+          class="h-100 d-flex flex-column justify-content-between align-items-center py-4"
+        >
+          <img src="./images/logo.png" alt="logo" class="w-50" />
+          <!-- <i id="toggleMenu" class="fa-solid fa-bars fa-2x"></i> -->
+
+          <div id="menu_bars" class="left">
+            <span></span> <span></span> <span></span>
+          </div>
+
+          <div class="d-flex flex-column">
+            <i class="fa-solid fa-globe fa-1x my-3"></i>
+            <i class="fa-solid fa-share-nodes fa-1x"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Search Section -->
+    <section id="search" class="py-5">
+      <div class="container w-75 py-4">
+        <div class="row">
+          <div class="col-md-6">
+            <input
+              type="text"
+              id="movieByWord"
+              class="form-control"
+              placeholder="Get movies by word..."
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              type="text"
+              id="movieSearch"
+              class="form-control"
+              placeholder="Search..."
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Movies Data Section -->
+    <section id="movies">
+      <div class="container w-75">
+        <div id="moviesRow" class="row"></div>
+      </div>
+    </section>
+    <section id="contact" class="my-5">
+      <div class="container text-white fw-normal w-75">
+        <h2>Contact Us...</h2>
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="contactInputs">
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="Enter Your Name"
+              />
+              <div class="alert alert-danger" id="nameAlert">
+                Please Enter Valid Name With UpperCase
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contactInputs">
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter Your Email"
+              />
+              <div class="alert alert-danger" id="emailAlert">
+                Please Enter Valid Email
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contactInputs">
+              <input
+                type="tel"
+                id="phoneNum"
+                class="form-control"
+                placeholder="Enter Your Phone Number"
+              />
+              <div class="alert alert-danger" id="phoneNumAlert">
+                Please Enter Valid Phone
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contactInputs">
+              <input
+                type="number"
+                id="ageNum"
+                class="form-control"
+                placeholder="Enter Your Age"
+              />
+              <div class="alert alert-danger" id="ageNumAlert">
+                Please Enter Valid Age
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contactInputs">
+              <input
+                type="password"
+                id="password"
+                class="form-control"
+                placeholder="Enter Your Password"
+              />
+              <div class="alert alert-danger" id="passwordAlert">
+                entre valid password *Minimum eight characters, at least one
+                letter and one number:*
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contactInputs">
+              <input
+                type="password"
+                id="rePassword"
+                class="form-control"
+                placeholder="Enter Your Password Again"
+              />
+              <div class="alert alert-danger" id="rePasswordAlert">
+                Please Enter Same Password
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-outline-danger"
+          id="submitBtn"
+          disabled
+        >
+          Submit
+        </button>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

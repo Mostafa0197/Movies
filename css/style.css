@@ -1,0 +1,223 @@
+/* main setting */
+body {
+  background-color   : #000000f2;
+  /* height          : 1000px; */
+}
+
+/* Start SideNav */
+#sideNav {
+  position        : fixed;
+  left            : -250px;
+  background-color: white;
+  height          : 100vh;
+  transition      : all 0.5s;
+  z-index         : 99999;
+}
+
+#navMenu {
+  width: 250px;
+}
+
+.nav {
+  height: 350px;
+}
+
+.nav .nav-link {
+  color        : white;
+  margin-bottom: 10px;
+  width        : 100%;
+  font-weight  : 300;
+  transition   : opacity 1.2s, padding 1.2s, color 0.3s;
+}
+
+/* .showLinks {
+  opacity    : 0;
+  padding-top: 500px;
+} */
+
+/* .nav:hover .nav-link {
+  opacity    : 1;
+  padding-top: 0;
+} */
+
+.nav .nav-link:hover {
+  color: #ff655c;
+}
+
+.icons a {
+  color          : white;
+  cursor         : default;
+  text-decoration: none;
+  transition     : all 0.3s;
+}
+
+.icons a i:hover {
+  color: #ff655c;
+}
+
+i {
+  cursor: pointer;
+}
+
+/* ------- Menu Bars ------- */
+
+#menu_bars {
+  padding    : 5px;
+  width      : 38px;
+  cursor     : pointer;
+  /* position: absolute;
+    z-index  : 1102; */
+}
+
+#menu_bars,
+#menu_bars span {
+  -webkit-transition: 300ms linear all;
+  -o-transition     : 300ms linear all;
+  transition        : 300ms linear all;
+}
+
+.navbar-toggle-visible #menu_bars {
+  top: 80px;
+}
+
+.navbar-toggle-visible #menu_bars.active {
+  top: 75px;
+}
+
+#menu_bars.active {
+  position : static;
+  /* height: 36px; */
+}
+
+#menu_bars span {
+  width     : 30px;
+  background: #333333;
+  height    : 1px;
+  display   : block;
+  margin    : 0 auto;
+}
+
+.navbar-toggle-visible #menu_bars span {
+  background: #333333;
+}
+
+#menu_bars span:nth-child(1),
+#menu_bars span:nth-child(3) {
+  width : 30px;
+  margin: 0 auto;
+}
+
+#menu_bars span:nth-child(2) {
+  margin: 5px 0;
+}
+
+#menu_bars:hover span:nth-child(1) {
+  width : 20px;
+  margin: 0 auto;
+}
+
+#menu_bars:hover span:nth-child(3) {
+  width : 10px;
+  margin: 0 auto;
+}
+
+#menu_bars.active span:nth-child(2) {
+  display: none;
+}
+
+#menu_bars.active span:nth-child(1),
+#menu_bars.active span:nth-child(3) {
+  width      : 30px;
+  /* top     : 20px; */
+  /* position: absolute; */
+  /* left    : 5px; */
+  margin-top : -1px;
+}
+
+#menu_bars.active span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -ms-transform    : rotate(45deg);
+  -o-transform     : rotate(45deg);
+  transform        : rotate(45deg);
+}
+
+#menu_bars.active span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform    : rotate(-45deg);
+  -o-transform     : rotate(-45deg);
+  transform        : rotate(-45deg);
+}
+
+/* ------- Menu Bars Left ------- */
+
+.side-nav.side-nav-left.side-nav-open {
+  -webkit-transition: 230ms linear all;
+  -o-transition     : 230ms linear all;
+  transition        : 230ms linear all;
+}
+
+.navbar-toggle-visible #menu_bars.left {
+  left      : 14px;
+  transition: 0.3s;
+}
+
+.navbar-toggle-visible #menu_bars.left.active {
+  left      : 140px;
+  transition: 0.4s;
+}
+
+/* End SideNav */
+
+
+/* for inputs */
+.form-control {
+  background-color: transparent;
+  text-align      : center;
+  border          : none;
+  border-bottom   : 1px solid rgba(255, 255, 255, .7);
+  border-radius   : 0;
+}
+
+.form-control:focus {
+  background-color: transparent;
+}
+
+/* Start Movies Section */
+.item {
+  position: relative;
+  overflow: hidden;
+}
+
+.itemDetails {
+  position        : absolute;
+  height          : 100%;
+  width           : 100%;
+  top             : 100%;
+  left            : 0;
+  text-align      : center;
+  background-color: rgba(255, 255, 255, .7);
+  transition      : all 1s;
+  font-weight     : 600;
+}
+
+.item:hover .itemDetails {
+  top   : 0;
+  bottom: 0;
+}
+
+/* End Movies Section */
+
+/* Start Contact Section */
+.contactInputs {
+  margin-bottom: 1rem;
+}
+
+#contact input {
+  color: white;
+}
+
+.alert {
+  display: none;
+}
+
+/* End Contact Section */
