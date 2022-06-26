@@ -221,4 +221,24 @@ $(document).ready(function () {
     }
   }
 
+  // Scroll To Contact Section
+  $('#navMenu .nav a:last-child').click(function () {
+    let contactOffset = $('#contact').offset().top
+    $('html,body').animate({ scrollTop: contactOffset }, 500)
+  })
+
+  // Back to Top 
+  $(window).scroll(function () {
+    let scrollTop = $(window).scrollTop()
+    if (scrollTop > 1000) {
+      $('#iconTop').fadeIn(1000);
+    } else {
+      $('#iconTop').fadeOut(1000);
+    }
+  });
+  $('#iconTop').click(function () {
+    $('html,body').animate({ scrollTop: '0px' }, 500)
+  });
+
+
 });

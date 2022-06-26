@@ -4,6 +4,28 @@ body {
   /* height          : 1000px; */
 }
 
+/* Back To Top */
+#iconTop {
+  position: fixed;
+  bottom  : 20px;
+  right   : 20px;
+  z-index : 999999;
+  display : none;
+}
+
+/* for inputs */
+.form-control {
+  background-color: transparent;
+  text-align      : center;
+  border          : none;
+  border-bottom   : 1px solid rgba(255, 255, 255, .7);
+  border-radius   : 0;
+}
+
+.form-control:focus {
+  background-color: transparent;
+}
+
 /* Start SideNav */
 #sideNav {
   position        : fixed;
@@ -30,16 +52,6 @@ body {
   transition   : opacity 1.2s, padding 1.2s, color 0.3s;
 }
 
-/* .showLinks {
-  opacity    : 0;
-  padding-top: 500px;
-} */
-
-/* .nav:hover .nav-link {
-  opacity    : 1;
-  padding-top: 0;
-} */
-
 .nav .nav-link:hover {
   color: #ff655c;
 }
@@ -59,14 +71,12 @@ i {
   cursor: pointer;
 }
 
-/* ------- Menu Bars ------- */
+/* Menu Bars  */
 
 #menu_bars {
-  padding    : 5px;
-  width      : 38px;
-  cursor     : pointer;
-  /* position: absolute;
-    z-index  : 1102; */
+  padding: 5px;
+  width  : 38px;
+  cursor : pointer;
 }
 
 #menu_bars,
@@ -85,8 +95,7 @@ i {
 }
 
 #menu_bars.active {
-  position : static;
-  /* height: 36px; */
+  position: static;
 }
 
 #menu_bars span {
@@ -127,11 +136,8 @@ i {
 
 #menu_bars.active span:nth-child(1),
 #menu_bars.active span:nth-child(3) {
-  width      : 30px;
-  /* top     : 20px; */
-  /* position: absolute; */
-  /* left    : 5px; */
-  margin-top : -1px;
+  width     : 30px;
+  margin-top: -1px;
 }
 
 #menu_bars.active span:nth-child(1) {
@@ -148,7 +154,7 @@ i {
   transform        : rotate(-45deg);
 }
 
-/* ------- Menu Bars Left ------- */
+/* Menu Bars Left  */
 
 .side-nav.side-nav-left.side-nav-open {
   -webkit-transition: 230ms linear all;
@@ -167,20 +173,6 @@ i {
 }
 
 /* End SideNav */
-
-
-/* for inputs */
-.form-control {
-  background-color: transparent;
-  text-align      : center;
-  border          : none;
-  border-bottom   : 1px solid rgba(255, 255, 255, .7);
-  border-radius   : 0;
-}
-
-.form-control:focus {
-  background-color: transparent;
-}
 
 /* Start Movies Section */
 .item {
